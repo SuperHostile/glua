@@ -187,7 +187,7 @@ fn_export void gl_set_global(const char* name) {
 fn_export void gl_get_global(const char* name) {
 	lua_getglobal(L, name);
 }
-// CODE SHITS
+// CODE
 fn_export short gl_call(const char* code) {
 	int status = luaL_loadstring(L, code);
 	if (status) { return 0; }
